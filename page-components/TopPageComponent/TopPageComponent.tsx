@@ -1,4 +1,4 @@
-import { Advantages, Htag, P, Product, Sort, Tag } from '../../components';
+import { Advantages, Htag, P, Movie, Sort, Tag } from '../../components';
 import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from './TopPageComponent.module.css';
 import { HhData } from '../../components';
@@ -8,8 +8,8 @@ import { useEffect, useReducer } from 'react';
 import { sortReducer } from './sort.reducer';
 import { useReducedMotion } from 'framer-motion';
 
-export const TopPageComponent = ({ page, products, firstCategory }: TopPageComponentProps): JSX.Element => {
-	const [{ products: sortedProducts, sort }, dispathSort] = useReducer(sortReducer, { products, sort: SortEnum.Rating });
+export const TopPageComponent = ({ page, movies, firstCategory }: TopPageComponentProps): JSX.Element => {
+	const [{ movies: sortedMovies, sort }, dispathSort] = useReducer(sortReducer, { movies, sort: SortEnum.Rating });
 	const shouldReduceMotion = useReducedMotion();
 
 	const setSort = (sort: SortEnum) => {
@@ -17,18 +17,18 @@ export const TopPageComponent = ({ page, products, firstCategory }: TopPageCompo
 	};
 
 	useEffect(() => {
-		dispathSort({ type: 'reset', initialState: products });
-	}, [products]);
+		dispathSort({ type: 'reset', initialState: movies });
+	}, [movies]);
 
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.title}>
 				<Htag tag='h1'>{page.title}</Htag>
-				{products && <Tag color='grey' size='m' aria-label={products.length + 'элементов'}>{products.length}</Tag>}
+				{movies && <Tag color='grey' size='m' aria-label={movies.length + 'элементов'}>{movies.length}</Tag>}
 				<Sort sort={sort} setSort={setSort} />
 			</div>
 			<div role='list'>
-				{sortedProducts && sortedProducts.map(p => (<Product role='listitem' layout={shouldReduceMotion ? false : true} key={p._id} product={p} />))}
+				{sortedMovies && sortedMovies.map(p => (<Movie role='listitem' layout={shouldReduceMotion ? false : true} key={p._id} movie={p} />))}
 			</div>
 			<div className={styles.hhTitle}>
 				<Htag tag='h2'>Вакансии - {page.category}</Htag>

@@ -1,4 +1,4 @@
-.product {
+.movie {
 	display: grid;
 	grid-template-columns:
 		[start] 70px [logoend] 30px [titlestart]
@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 1320px) {
-	.product {
+	.movie {
 		grid-template-columns: 70px 30px auto 40px auto 40px 1fr;
 		grid-template-areas:
 			"logo . title title title title title"
@@ -245,7 +245,7 @@
 }
 
 @media screen and (max-width: 640px) {
-	.product {
+	.movie {
 		grid-template-columns: 70px 30px 1fr;
 		grid-template-areas:
 			"logo . title"
@@ -275,7 +275,7 @@
 }
 
 @media screen and (max-width: 480px) {
-	.product {
+	.movie {
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			"logo"

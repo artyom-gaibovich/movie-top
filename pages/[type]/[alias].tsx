@@ -4,7 +4,7 @@ import { withLayout } from '../../layout/Layout';
 import axios from 'axios';
 import { MenuItem } from '../../interfaces/menu.interface';
 import { TopLevelCategory, TopPageModel } from '../../interfaces/page.interface';
-import { ProductModel } from '../../interfaces/product.interface';
+import { MovieModel } from '../../interfaces/movie.interface';
 import { firstLevelMenu } from '../../helpers/helpers';
 import { TopPageComponent } from '../../page-components';
 import { API } from '../../helpers/api';
@@ -12,8 +12,8 @@ import Head from 'next/head';
 import { Error404 } from '../404';
 import { ParsedUrlQuery } from 'querystring';
 
-function TopPage({ firstCategory, page, products }: TopPageProps): JSX.Element {
-	if (!page || !products) {
+function TopPage({ firstCategory, page, movies }: TopPageProps): JSX.Element {
+	if (!page || !movies) {
 		return <Error404 />;
 	}
 
@@ -28,7 +28,7 @@ function TopPage({ firstCategory, page, products }: TopPageProps): JSX.Element {
 		<TopPageComponent
 			firstCategory={firstCategory}
 			page={page}
-			products={products}
+			movies={movies}
 		/>
 	</>;
 }
@@ -71,7 +71,7 @@ export const getStaticProps: GetStaticProps<TopPageProps> = async ({ params }: G
 			};
 		}
 		const { data: page } = await axios.get<TopPageModel>(API.topPage.byAlias + params.alias);
-		const { data: products } = await axios.post<ProductModel[]>(API.product.find, {
+		const { data: movies } = await axios.post<MovieModel[]>(API.movie.find, {
 			category: page.category,
 			limit: 10
 		});
@@ -81,7 +81,7 @@ export const getStaticProps: GetStaticProps<TopPageProps> = async ({ params }: G
 				menu,
 				firstCategory: firstCategoryItem.id,
 				page,
-				products
+				movies
 			}
 		};
 	} catch {
@@ -96,5 +96,5 @@ interface TopPageProps extends Record<string, unknown> {
 	menu: MenuItem[];
 	firstCategory: TopLevelCategory;
 	page: TopPageModel;
-	products: ProductModel[];
+	movies: MovieModel[];
 }

@@ -12,14 +12,14 @@ import axios from 'axios';
 import { API } from '../../helpers/api';
 import { useState } from 'react';
 
-export const ReviewForm = ({ productId, isOpened, className, ...props }: ReviewFormProps): JSX.Element => {
+export const ReviewForm = ({ movieId, isOpened, className, ...props }: ReviewFormProps): JSX.Element => {
 	const { register, control, handleSubmit, formState: { errors }, reset, clearErrors } = useForm<IReviewForm>();
 	const [isSuccess, setIsSuccess] = useState<boolean>(false);
 	const [error, setError] = useState<string>();
 
 	const onSubmit = async (formData: IReviewForm) => {
 		try {
-			const { data } = await axios.post<IReviewSentResponse>(API.review.createDemo, { ...formData, productId });
+			const { data } = await axios.post<IReviewSentResponse>(API.review.createDemo, { ...formData, movieId });
 			if (data.message) {
 				setIsSuccess(true);
 				reset();

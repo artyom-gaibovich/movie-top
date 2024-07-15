@@ -1,4 +1,4 @@
-export interface ProductCharacteristic {
+export interface MovieCharacteristic {
 	value: string;
 	name: string;
 }
@@ -12,7 +12,7 @@ export interface ReviewModel {
 	createdAt: Date;
 }
 
-export interface ProductModel {
+export interface MovieModel {
 	_id: string;
 	categories: string[];
 	tags: string[];
@@ -22,7 +22,7 @@ export interface ProductModel {
 	credit: number;
 	oldPrice: number;
 	description: string;
-	characteristics: ProductCharacteristic[];
+	characteristics: MovieCharacteristic[];
 	createdAt: Date;
 	updatedAt: Date;
 	__v: number;

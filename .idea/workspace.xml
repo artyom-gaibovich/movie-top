@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a8526e9-19a8-4cea-a12f-e9e0f4bd0b16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Movie/Movie.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Movie/Movie.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.props.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Movie/Movie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Review/Review.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Review/Review.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/helpers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/helpers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/page.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/page.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/product.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/movie.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-components/TopPageComponent/TopPageComponent.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/page-components/TopPageComponent/TopPageComponent.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-components/TopPageComponent/TopPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/page-components/TopPageComponent/TopPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-components/TopPageComponent/sort.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/page-components/TopPageComponent/sort.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[type]/[alias].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[type]/[alias].tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="features/task1_remove_components" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2jEseA1TilLx7e15UkCeAOGpJaP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "features/task1__remove__components",
+    "last_opened_file_path": "/home/artyom/WebstormProjects/demo-movies",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/home/artyom/WebstormProjects/movie-top/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/artyom/WebstormProjects/movie-top/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a8526e9-19a8-4cea-a12f-e9e0f4bd0b16" name="Changes" comment="" />
+      <created>1720963663010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720963663010</updated>
+      <workItem from="1720963664113" duration="1206000" />
+      <workItem from="1721034618797" duration="9000" />
+      <workItem from="1721061846232" duration="2084000" />
+      <workItem from="1721066119703" duration="14000" />
+      <workItem from="1721066161154" duration="5359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
